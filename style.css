@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+.settings {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 2px;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.grid div {
+  width: 30px;
+  height: 30px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+}
+
+.grid div.ship {
+  background-color: #007bff;
+}
+
+.grid div.hit {
+  background-color: red;
+}
+
+.grid div.miss {
+  background-color: lightgray;
+}
+
+.grid.active {
+  border: 2px solid #007bff;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+.dark-theme button {
+  background-color: #555;
+}
+
+.dark-theme button:hover {
+  background-color: #333;
+}
+
+.dark-theme .grid div {
+  background-color: #555;
+  border-color: #777;
+}
+
+.dark-theme .grid div.ship {
+  background-color: #444;
+}
+
+.dark-theme .grid div.hit {
+  background-color: darkred;
+}
+
+.dark-theme .grid div.miss {
+  background-color: gray;
+}
